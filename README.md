@@ -7,4 +7,4 @@ Data Science & AI: PyTorch, JAX, Physics-Informed ML, NumPy, SciPy, Pandas
 
 Web & Interfaces: TypeScript, React, Three.js, Node.js, WebSockets, REST APIs
 
-**(“Include a structured Markdown table mapping your academic progression at ODU directly to your targeted research clusters”)**
+**(“Include a structured Markdown table mapping my academic progression at ODU directly to my targeted research clusters”)**
