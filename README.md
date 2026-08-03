@@ -7,4 +7,7 @@ Data Science & AI: PyTorch, JAX, Physics-Informed ML, NumPy, SciPy, Pandas
 
 Web & Interfaces: TypeScript, React, Three.js, Node.js, WebSockets, REST APIs
 
+Core Interests: Cyber-Physical Systems (CPS) • Digital Twins • Hemodynamic/Neural Modeling • Flight Control Laws • Automation
+
+
 **(“Include a structured Markdown table mapping my academic progression at ODU directly to my targeted research clusters”)**
