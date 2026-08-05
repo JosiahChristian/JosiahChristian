@@ -22,7 +22,7 @@ I design and develop at the intersection of safety-critical embedded systems, ne
 * **Core Stack:** Modern C++, CMake, Git Actions DevOps Toolchains
 * **Engineering Rigor:** Built an object-oriented, modular 6-DOF Quadcopter proportional feedback flight control law simulator. Enforces cross-compiler stability checks (Clang/GCC) with strict warning assertions (`-Werror`) directly inside automated cloud continuous integration pipelines.
 
-#### 📊 [AeroCPSTelemetry (Live Dashboard App)](https://github.com)
+#### 📊 [AeroCPSTelemetry](https://github.com)
 * **Core Stack:** HTML5, CSS Grid Visual Design, Plain JavaScript Canvas Matrix Api
 * **Deployment:** A responsive, dark-mode ground-control visualizer telemetry stream. It captures and animates aircraft altitude tracking frames and velocity logs directly inside a real-time front-end application workspace hosted globally via GitHub Pages.
 * 🖥️ **[Launch Live Visualizer Link](https://christianjosiah2484-ai.github.io/AeroCPSTelemetry/)**
@@ -30,6 +30,10 @@ I design and develop at the intersection of safety-critical embedded systems, ne
 #### 🧠 [AeroDigitalTwin](https://github.com)
 * **Core Stack:** Python 3, NumPy Scientific Matrix Solvers, Gradient Descent Solvers
 * **Data Focus:** An algorithmic optimization engine implementing a Physics-Informed Machine Learning (PINN) loop framework. Solves and fits parameters to analyze lifecycle mechanical fatigue metrics and predictive maintenance intervals without numeric data overflow.
+
+#### 🫀 [BiomedicalSystemsSolver](https://github.com)
+* **Core Stack:** Python 3, NumPy Matrix Solvers, Matplotlib Visualization
+* **Biophysics Focus:** A dual-domain computational biophysics engine. Implements an explicit Euler transient voltage integrator to model action potential signal propagation along simulated neural axon channels, running side-by-side with a finite-difference Navier-Stokes fluid solver tracking arterial blood velocity profiles.
 
 ---
 
