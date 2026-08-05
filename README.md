@@ -25,7 +25,7 @@ I design and develop at the intersection of safety-critical embedded systems, ne
 #### 📊 [AeroCPSTelemetry](https://github.com)
 * **Core Stack:** HTML5, CSS Grid Visual Design, Plain JavaScript Canvas Matrix Api
 * **Deployment:** A responsive, dark-mode ground-control visualizer telemetry stream. It captures and animates aircraft altitude tracking frames and velocity logs directly inside a real-time front-end application workspace hosted globally via GitHub Pages.
-* 🖥️ **[Launch Live Visualizer Link](https://christianjosiah2484-ai.github.io/AeroCPSTelemetry/)**
+**🖥️ [Launch Live Visualizer Link](https://github.io)**
 
 #### 🧠 [AeroDigitalTwin](https://github.com)
 * **Core Stack:** Python 3, NumPy Scientific Matrix Solvers, Gradient Descent Solvers
