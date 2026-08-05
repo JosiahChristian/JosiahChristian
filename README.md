@@ -7,11 +7,12 @@
 ---
 
 ### 🧬 Professional Research Blueprint
-I design and develop at the intersection of safety-critical embedded systems, high-fidelity biological fluid dynamics solvers, and real-time data visualizer control streams. My work focuses on building robust software systems to model physical and computational realities.
+I design and develop at the intersection of safety-critical embedded systems, neuro-computational electrophysiology simulators, and real-time data visualizer control streams. My work focuses on building robust software systems to model physical and computational biological realities.
 
+* 🧠 **Nervous System & Electrophysiology:** Modeling high-frequency mathematical simulations targeting action potential signal propagation and synaptic current loops across complex neural networks.
+* 🫀 **Cardiovascular Fluid Dynamics:** Simulating numerical multi-node transient flow velocities and viscous friction drag profiles across arterial vascular grids.
 * 🔍 **Cyber-Physical Systems & Robotics:** Designing localized, modern C++ control feedback architectures and sensor state-space estimations.
-* 🧠 **Physics-Informed Data Science:** Training neural predictive tracking loops bound natively by thermodynamic, mechanical, and gravitational physics equations.
-* 🫀 **Biomedical Engineering:** Modeling high-frequency mathematical simulations targeting fluid dynamics across complex human vascular grids.
+* 🚀 **Physics-Informed Data Science:** Training neural predictive tracking loops bound natively by thermodynamic, mechanical, and gravitational physics equations.
 
 ---
 
