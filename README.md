@@ -1,7 +1,7 @@
 # Research Software Engineer | Cyber-Physical Systems & Computational Simulation
 
 🚀 **BSCS Student @ Old Dominion University** (Web Programming Minor) 
-🎓 **Dual-Linked MS in Data Science Student @ Old Dominion University** (AI & Machine Learning Concentration)
+🎓 **Dual-Linked MSDS Student @ Old Dominion University** (AI & Machine Learning Concentration)
 🎯 **Target Track:** Ph.D. in Modeling and Simulation Engineering
 
 ---
