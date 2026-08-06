@@ -39,7 +39,7 @@ I design and develop at the intersection of safety-critical embedded systems, ne
 * **Core Stack:** Java 17 Standard Edition, Java Concurrency Utilities (`java.util.concurrent`)
 * **Enterprise Focus:** A multi-threaded message ingestion pipeline. Implements decoupled Producer/Consumer multi-threaded workers feeding data asynchronously into thread-safe locking structures to demonstrate production-grade enterprise software architecture patterns.
 
-#### 🤖 [AutonomousPathPlanner](https://github.com)
+#### 🤖 [AutonomousPathPlanner](https://github.com/christianjosiah2484-ai/AutonomousPathPlanner)
 * **Core Stack:** Modern C++ (Standard Compliance Layout), Spatial Kinematics, Decision Automation Logs
 * **Autonomy Focus:** An advanced algorithmic path planning software system. Implements sensory map parsing (Perception Stage) running alongside dynamic geometric collision calculation loops (Planning Stage) to execute real-time evasive steering adjustments when trajectories intersect obstacle domains.
 
