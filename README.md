@@ -35,7 +35,7 @@ I design and develop at the intersection of safety-critical embedded systems, ne
 * **Core Stack:** Python 3, NumPy Matrix Solvers, Matplotlib Visualization
 * **Biophysics Focus:** A dual-domain computational biophysics engine. Implements an explicit Euler transient voltage integrator to model action potential signal propagation along simulated neural axon channels, running side-by-side with a finite-difference Navier-Stokes fluid solver tracking arterial blood velocity profiles.
 
-#### ☕ [TelemetryPipelineJava](https://github.com)
+#### ☕ [TelemetryPipelineJava](https://github.com/christianjosiah2484-ai/TelemetryPipelineJava)
 * **Core Stack:** Java 17 Standard Edition, Java Concurrency Utilities (`java.util.concurrent`)
 * **Enterprise Focus:** A multi-threaded message ingestion pipeline. Implements decoupled Producer/Consumer multi-threaded workers feeding data asynchronously into thread-safe locking structures to demonstrate production-grade enterprise software architecture patterns.
 
