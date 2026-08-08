@@ -1,6 +1,6 @@
-# ODU Doctoral Research Matrix: Literature Review Workspace
+# Doctoral Research Matrix: Literature Review Workspace
 
-This tracking database logs the historical data, mathematical equations, and active literature reviews matching my trajectory into the ODU Ph.D. in Modeling and Simulation Engineering.
+This tracking database logs the historical data, mathematical equations, and active literature reviews matching my trajectory into a Ph.D. in Modeling and Simulation Engineering program.
 
 ---
 
