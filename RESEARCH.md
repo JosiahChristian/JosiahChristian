@@ -37,3 +37,22 @@ This ledger functions as an active mapping log to guarantee every upcoming gradu
 2.  **MSIM 541 (Computer Graphics & Visualization):** Applied to extend browser-native low-overhead interactive monitoring canvases.
 3.  **Advanced Machine Learning Graduate Seminars:** Applied to optimize stress tracking weight algorithms inside the structural digital twin engine.
 4.  **High-Performance Computing (HPC) Core:** Applied to translate local script configurations into scalable, distributed parallel arrays running on ODU clusters.
+
+---
+
+## 📊 Comprehensive Computational Simulation Data Ledger
+
+This ledger acts as a permanent auditing framework tracking the discrete mathematical variations, operational environments, and resulting physical file logs compiled across my technical architecture.
+
+| 📂 Target Repository Slot | 🏷️ Research Scenario Profile | 🌍 Physical Parameters Tested | 📄 Log Asset Generated (Hard Drive / Cloud) |
+| :--- | :--- | :--- | :--- |
+| `AeroCPSSimulation` | Baseline Planetary Flight | Gravity: $-9.81 \text{ m/s}^2$ (Earth Core) | `test_logs/flight_telemetry_run_history.txt` |
+| `AeroCPSSimulation` | Deep Space Drone Auto-Pilot | Gravity: $-3.711 \text{ m/s}^2$ (Mars Grid) | `test_logs/flight_telemetry_run_history.txt` |
+| `AeroDigitalTwin` | Optimization Phase Baseline | Epochs: $50$ \| Learning Rate: $1\text{e-}4$ | `test_logs/learning_test_run_baseline.txt` |
+| `AeroDigitalTwin` | Deep Model Convergence Suite | Epochs: $500$ \| Learning Rate: $1\text{e-}3$| `test_logs/learning_test_run_converged.txt` |
+| `BiomedicalSystemsSolver` | Transient Carotid Hemodynamics| Track Scale: $10 \text{ cm}$ \| Nodes: $20$ | `output/hemodynamic_velocity_vector.txt` |
+| `BiomedicalSystemsSolver` | Neuro-Electrophysiology Cable | Track Scale: $1 \text{ cm}$ \| Nodes: $100$ | `output/transmembrane_potential_volt.txt` |
+
+### 🛠️ Execution Tracking Protocol
+* Local text logs generated in standard comma-separated text frameworks (`.txt` / `.csv`) are housed inside structured root-level `test_logs/` sub-directories.
+* Changes are automatically ingested and integrated during pushing routines to serve as immutable benchmark artifacts matching my doctoral thesis progress timeline tracking constraints.
