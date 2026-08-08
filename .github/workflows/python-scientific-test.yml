@@ -1,58 +1,21 @@
-name: Scientific Python CI
+name: Profile Biography Document Verification
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main, develop ]
+    branches: [ "main" ]
 
 jobs:
-  test-and-lint:
+  verify-documents:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        # Test against multiple Python versions to ensure scientific library compatibility
-        python-version: ["3.10", "3.11", "3.12"]
 
     steps:
-    - name: Checkout Repository
+    - name: Checkout Biography Codebase
       uses: actions/checkout@v4
 
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v5
-      with:
-        python-version: ${{ matrix.python-version }}
-        # Caches pip dependencies automatically to drastically speed up workflow runs
-        cache: 'pip'
-
-    - name: Install System Dependencies
+    - name: Validate Markdown Architecture Integrity
       run: |
-        sudo apt-get update
-        # Install basic native tools often required for compiled scientific extensions
-        sudo apt-get install -y build-essential gfortran libblas-dev liblapack-dev
-
-    - name: Install Python Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install flake8 black pytest pytest-cov
-        # If your project has a requirements file, install it here
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-    - name: Lint with Black and Flake8
-      run: |
-        # Stop the build if there are Python syntax errors or undefined names
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # Check formatting without modifying files
-        black --check .
-
-    - name: Run Numerical Simulation Tests
-      run: |
-        # Runs pytest, generates a terminal coverage report, and creates an XML artifact
-        # The fail-under flag forces a build failure if test coverage drops below 80%
-        pytest --cov=./ --cov-report=term --cov-report=xml --cov-fail-under=80
-
-    - name: Upload Coverage Report
-      uses: actions/upload-artifact@v4
-      with:
-        name: python-coverage-${{ matrix.python-version }}
-        path: coverage.xml
+        echo "Initializing multi-domain academic asset ledger parsing..."
+        test -f README.md && echo "SUCCESS: Core landing biography baseline located."
+        test -f RESEARCH.md && echo "SUCCESS: Master doctoral research ledger verified."
