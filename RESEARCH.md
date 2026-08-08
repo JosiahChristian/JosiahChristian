@@ -63,21 +63,21 @@ This ledger acts as a permanent auditing framework tracking the discrete mathema
 
 This section documents the foundational calculus limits, partial differential equations, and state-space tracking mechanics guiding my doctoral research thesis compilation.
 
-### 📐 1. Non-Linear Hemodynamic Convective Mass-Transport Fluid Core
-The fluid dynamics solver moves beyond basic linear boundary assumptions to enforce a 1D incompressible convective Navier-Stokes profile tracking velocity vectors through an elastic carotid tract segment:
-
-$$\frac{\partial v}{\partial t} + v \frac{\partial v}{\partial x} = -\frac{1}{\rho}\frac{\partial P}{\partial x} + \frac{\mu}{\rho}\left(\frac{\partial^2 v}{\partial x^2} + \frac{1}{R}\frac{\partial R}{\partial x}\frac{\partial v}{\partial x}\right)$$
-
-*   **Convective Acceleration Mapping:** The spatial gradient ($v \frac{\partial v}{\partial x}$) resolves non-linear fluid momentum velocity alterations caused by geometric arterial lumen alterations.
-*   **Fluid-Structure Interaction Coupling:** The boundary tracking component ($\frac{1}{R}\frac{\partial R}{\partial x}$) models radial cross-sectional boundary expansion ($R$), capturing wall shear stress modifications during heart wall systolic ejections.
-
-### ⚡ 2. Multi-Scale Hodgkin-Huxley Cable Matrix Verification
+### ⚡ 1. Multi-Scale Hodgkin-Huxley Cable Matrix Verification
 Electrical signal propagation velocity down unmyelinated neural pathways is evaluated by tracking parallel membrane capacitance and ion channel conductance parameters:
 
 $$\frac{a}{2R_a}\frac{\partial^2 V}{\partial x^2} = C_m\frac{\partial V}{\partial t} + \bar{g}_{Na}m^3h(V - V_{Na}) + \bar{g}_K n^4(V - V_K) + g_L(V - V_L)$$
 
 *   **Axoplasmic Diffusion Metric:** The second-order derivative ($\frac{\partial^2 V}{\partial x^2}$) governs passive longitudinal voltage decay down the fiber core axis based on axial core radius ($a$) constraints.
 *   **Voltage-Gated Gating Transitions:** Dynamic open/close probability matrices ($m, h, n$) simulate the precise sodium depolarization and potassium repolarization currents generating transient clinical potential voltage spike waveforms.
+
+### 📐 2. Non-Linear Hemodynamic Convective Mass-Transport Fluid Core
+The fluid dynamics solver moves beyond basic linear boundary assumptions to enforce a 1D incompressible convective Navier-Stokes profile tracking velocity vectors through an elastic carotid tract segment:
+
+$$\frac{\partial v}{\partial t} + v \frac{\partial v}{\partial x} = -\frac{1}{\rho}\frac{\partial P}{\partial x} + \frac{\mu}{\rho}\left(\frac{\partial^2 v}{\partial x^2} + \frac{1}{R}\frac{\partial R}{\partial x}\frac{\partial v}{\partial x}\right)$$
+
+*   **Convective Acceleration Mapping:** The spatial gradient ($v \frac{\partial v}{\partial x}$) resolves non-linear fluid momentum velocity alterations caused by geometric arterial lumen alterations.
+*   **Fluid-Structure Interaction Coupling:** The boundary tracking component ($\frac{1}{R}\frac{\partial R}{\partial x}$) models radial cross-sectional boundary expansion ($R$), capturing wall shear stress modifications during heart wall systolic ejections.
 
 ### 🛸 3. Environmental Disturbance Control State-Space Array
 The validation of autonomous aerospace vehicle trajectory tracking loops operating under extreme atmospheric constraints uses a continuous safety-critical control framework:
