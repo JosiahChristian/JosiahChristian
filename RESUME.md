@@ -1,5 +1,5 @@
-# [Josiah Christian]
-📍 Winchester, VA | 💻 ://github.com | ✉️ [christianjosiah2484@gmail.com]
+# Josiah Christian
+📍 Winchester, VA | 💻 https://github.com/christianjosiah2484-ai | ✉️ [christianjosiah2484@gmail.com]
 
 ## 🎯 CORE OBJECTIVE
 To pursue doctoral research in Computational Modeling and Simulation Engineering (CMSE). Seeking to engineer high-performance, real-time, physics-informed computational engines and full-stack digital twins to solve safety-critical autonomous vehicle navigation and multi-scale biological systems transport challenges.
