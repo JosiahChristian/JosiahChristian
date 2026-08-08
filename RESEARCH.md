@@ -126,3 +126,21 @@ This index bridges the discrete structural string tracking metrics archived in l
 | `cardioVelocity` | Transient Blood Mass-Transport Velocity ($v(x,t)$) | Scrolling 2D pixel coordinates plotting mid-artery Carotid pressure pump fluid waves |
 | `actionPotential` | Axon Transmembrane Potential ($V(x,t)$) | Scrolling red vector lines plotting voltage-gated synaptic depolarization spikes |
 | `systolicBP / diastolicBP`| Intravascular Blood Hydrostatic Pressure ($P$) | Automated text data canvas bindings calculating mean arterial blood pressure indices |
+
+---
+
+## 📖 Deep-Dive Journal Analysis: Physics-Informed Fluid Architectures
+
+This log encapsulates the mathematical derivations extracted from foundational PINN literature regarding continuous non-linear partial differential equation constraints embedded within neural network backpropagation loops.
+
+### 🌊 1. Incompressible Navier-Stokes Conservation Constraints
+When modeling high-dimensional fluid velocity vectors or transient hemodynamic boundary layers, the predictive model is physically bound to satisfy classical momentum and mass conservation:
+
+$$\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} = -\nabla p + \nu \nabla^2 \mathbf{u} \quad \text{and} \quad \nabla \cdot \mathbf{u} = 0$$
+
+### 🧠 2. Automatic Differentiation Optimization Residuals
+The deep network outputs approximation parameters for velocity ($\hat{\mathbf{u}}$) and hydrostatic pressure ($\hat{p}$). Applying automatic differentiation yields the custom physics penalty operator evaluated over $N_f$ distinct spatial collocation points:
+
+$$\mathcal{L}_{\text{physics}} = \frac{1}{N_f} \sum_{i=1}^{N_f} \left| \frac{\partial \hat{\mathbf{u}}}{\partial t} + (\hat{\mathbf{u}} \cdot \nabla)\hat{\mathbf{u}} + \nabla \hat{p} - \nu \nabla^2 \hat{\mathbf{u}} \right|^2 + \frac{1}{N_f} \sum_{i=1}^{N_f} \left| \nabla \cdot \hat{\mathbf{u}} \right|^2$$
+
+This residual loss forces the gradient descent optimizer to reject physically impossible solutions, guaranteeing absolute model stability even in sparse telemetry tracking zones.
