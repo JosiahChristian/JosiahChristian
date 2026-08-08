@@ -144,3 +144,28 @@ The deep network outputs approximation parameters for velocity ($\hat{\mathbf{u}
 $$\mathcal{L}_{\text{physics}} = \frac{1}{N_f} \sum_{i=1}^{N_f} \left| \frac{\partial \hat{\mathbf{u}}}{\partial t} + (\hat{\mathbf{u}} \cdot \nabla)\hat{\mathbf{u}} + \nabla \hat{p} - \nu \nabla^2 \hat{\mathbf{u}} \right|^2 + \frac{1}{N_f} \sum_{i=1}^{N_f} \left| \nabla \cdot \hat{\mathbf{u}} \right|^2$$
 
 This residual loss forces the gradient descent optimizer to reject physically impossible solutions, guaranteeing absolute model stability even in sparse telemetry tracking zones.
+
+---
+
+## 📖 Deep-Dive Journal Analysis: Non-Linear Membrane Gating Kinetics
+
+This log documents the mathematical frameworks governing voltage-gated ion transport mechanics across excitable cellular lipid bilayers, mapping micro-scale gate transitions to macro-scale electrical waveforms.
+
+### ⚡ 1. First-Order Hodgkin-Huxley State Variables
+The transient conductivity of Sodium ($Na^+$) and Potassium ($K^+$) channels is governed by three independent, voltage-dependent gating elements ($m, h, n$) tracking activation and inactivation limits:
+
+$$\frac{dm}{dt} = \alpha_m(V)(1 - m) - \beta_m(V)m$$
+$$\frac{dh}{dt} = \alpha_h(V)(1 - h) - \beta_h(V)h$$
+$$\frac{dn}{dt} = \alpha_n(V)(1 - n) - \beta_n(V)n$$
+
+*   **Voltage-Dependent Rate Coefficients:** The forward ($\alpha$) and backward ($\beta$) transition rates are explicitly bound by exponential thermodynamic properties relative to the instantaneous transmembrane voltage ($V$):
+    $$\alpha_n(V) = \frac{0.01(V + 55)}{1 - \exp(-(V + 55)/10)} \quad \text{and} \quad \beta_n(V) = 0.125\exp\left(-\frac{V + 65}{80}\right)$$
+
+### 📊 2. Biophysics Telemetry System Mapping Core
+These discrete computational arrays drive the scrolling waveforms rendered natively within the low-latency interactive oscilloscope:
+*   `m_gate` $\rightarrow$ Controls the immediate inward $Na^+$ current density, generating the rapid $+40\text{ mV}$ peak depolarization spike.
+*   `h_gate` & `n_gate` $\rightarrow$ Simulates the delayed outward $K^+$ current activation and sodium channel closing, forcing the repolarization decay back to the steady $-70\text{ mV}$ baseline.
+
+| 📂 Target Repository Slot | 🏷️ Research Scenario Profile | 🌍 Physical Parameters Tested | 📄 Log Asset Generated (Hard Drive / Cloud) |
+| :--- | :--- | :--- | :--- |
+| `BiomedicalSystemsSolver` | Axon Action Potential Sweep | Baseline Spike Bounds ($-70\text{ to } +40\text{ mV}$) | `test_logs/axon_membrane_voltage_potential.txt` |
