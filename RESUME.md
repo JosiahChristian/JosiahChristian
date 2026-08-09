@@ -41,3 +41,7 @@ To pursue doctoral research in Computational Modeling and Simulation Engineering
 ## 🎓 ACADEMIC ROADMAP & INTEGRATION TRACK
 *   **Data Science MS Regression Seminars:** Applying linear models to refine weight boundaries inside the structural deep learning twin.
 *   **High-Performance Computing Core:** Scaling local C++ multi-scale tissue solvers to execute across distributed supercomputing clusters using parallel processing tools.
+*   
+## 🎓 MASTER'S THESIS PROFILE
+*   **Title:** *Detecting Adversarial Data Poisoning Attacks in Reinforcement Learning Models Using High-Fidelity Behavioral Simulation*
+*   **Core Methodologies:** Reinforcement Learning (RL) policy verification, adversarial machine learning mitigation, multi-variable statistical anomaly detection, high-fidelity physical systems modeling.
