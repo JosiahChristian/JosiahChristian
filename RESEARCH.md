@@ -4,6 +4,8 @@
 
 ## 🎓 Master's Thesis Bridging Node (Computational Foundation)
 
+*   **Open-Source Verification Code Base:** [christianjosiah2484-ai/Adversarial-RL-Data-Poisoning-Thesis](https://github.com/christianjosiah2484-ai/Adversarial-RL-Data-Poisoning-Thesis/blob/main/paper)
+
 My trajectory into a Ph.D. program builds directly upon the mathematical and empirical baselines established during my Master's research curriculum. Rather than treating graduate milestones as static milestones, my doctoral infrastructure actively ingests, optimizes, and scales my Master's thesis frameworks into high-performance, real-time cyber-physical systems.
 
 ### 🔬 Core Thesis Integration
