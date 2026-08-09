@@ -1,0 +1,27 @@
+name: Profile Documentation Validation
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate-profile-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify core profile documents
+        run: |
+          test -f README.md
+          test -f RESUME.md
+          test -f RESEARCH.md
+
+      - name: Report validated documents
+        run: |
+          echo "README.md verified"
+          echo "RESUME.md verified"
+          echo "RESEARCH.md verified"
