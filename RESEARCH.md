@@ -1,206 +1,844 @@
-# Doctoral Research Matrix: Literature Review Workspace
+# Computational Modeling & Intelligent Systems Research Workspace
+
+This document serves as a developing research notebook connecting mathematical models, computational experiments, software implementations, and future research questions across my engineering portfolio.
+
+The central research theme is the study of **complex evolving systems**: systems whose internal state changes over time, is only partially observable, is influenced by uncertainty or disturbance, and may require prediction, adaptation, or control.
+
+Current application domains include:
+
+- cyber-physical and autonomous systems,
+- aerospace dynamics,
+- computational biophysics,
+- digital twins,
+- physics-informed machine learning,
+- reinforcement-learning robustness, and
+- adaptive computational modeling.
+
+The purpose of this workspace is not to present completed research conclusions. It documents mathematical foundations, implementation mappings, hypotheses, and research directions that can be tested and refined as the associated software develops.
 
 ---
 
-## 🎓 Master's Thesis Bridging Node (Computational Foundation)
+# 1. Unifying Mathematical Perspective
 
-*   **Open-Source Verification Code Base:** [christianjosiah2484-ai/Adversarial-RL-Data-Poisoning-Thesis](https://github.com/christianjosiah2484-ai/Adversarial-RL-Data-Poisoning-Thesis/blob/main/paper)
+Many of the systems represented across this portfolio can be expressed through a dynamical-system formulation:
 
-My trajectory into a Ph.D. program builds directly upon the mathematical and empirical baselines established during my Master's research curriculum. Rather than treating graduate milestones as static milestones, my doctoral infrastructure actively ingests, optimizes, and scales my Master's thesis frameworks into high-performance, real-time cyber-physical systems.
+$$
+\dot{\mathbf{x}}(t)
+=
+f\left(
+\mathbf{x}(t),
+\mathbf{u}(t),
+\mathbf{w}(t),
+\boldsymbol{\theta},
+t
+\right)
+$$
 
-### 🔬 Core Thesis Integration
-*   **Master's Research Domain Focus:** Detecting Adversarial Data Poisoning Attacks in Reinforcement Learning Models Using High-Fidelity Behavioral Simulation.
-*   **Mathematical Integration Coordinate:** Evaluates the vulnerabilities of autonomous Reinforcement Learning (RL) policy functions ($\pi(a \mid s)$) under malicious state-observation perturbations.
-*   **Translational Pipeline Scaling:**
-    *   *Data Layer:* Poisoned optimization trajectories generated during high-fidelity simulations are archived inside `AeroDigitalTwin/test_logs/` to establish detection baseline boundaries.
-    *   *Compute Layer:* Anomaly detection classification models written in Python are integrated directly adjacent to the C++ closed-loop autopilot controller structures to run real-time data filtering.
+where:
 
-This tracking database logs the historical data, mathematical equations, and active literature reviews matching my trajectory into a Ph.D. in Modeling and Simulation Engineering program.
+- $\mathbf{x}(t)$ represents the internal system state,
+- $\mathbf{u}(t)$ represents control inputs,
+- $\mathbf{w}(t)$ represents disturbances or uncertain external influences,
+- $\boldsymbol{\theta}$ represents model parameters, and
+- $f(\cdot)$ defines the governing dynamics.
 
----
+Measurements may provide only an incomplete representation of that state:
 
-## 📑 Core Literature Review Log Matrix
+$$
+\mathbf{y}(t)
+=
+h\left(
+\mathbf{x}(t)
+\right)
++
+\mathbf{v}(t)
+$$
 
-### 🧠 1. Neuro-Electrophysiology & Bio-Transport Space
-*   **Target Publication Domain:** Multi-scale mathematical modeling of excitable biological tissues.
-*   **Mathematical Foundation (Spatial Cable Equation):**
-    $$C_m \frac{\partial V}{\partial t} = \frac{a}{2R_a} \frac{\partial^2 V}{\partial x^2} - \sum I_{ion}$$
-*   **Core Literature Insights:** Analysis of how micro-scale changes in axon diameter ($a$) or membrane capacitance ($C_m$) directly impact macro-scale signal propagation velocities. This maps directly to my optimization adjustments within `BiomedicalSystemsSolver`.
-*   **Active Lab Mapping:** Directly supports virtual anatomical validation tracks under ODU Medical Simulation pipelines.
+where $\mathbf{v}(t)$ represents measurement noise or observational uncertainty.
 
-### 📊 2. Physics-Informed Neural Networks (PINN) Space
-*   **Target Publication Domain:** Integrating partial differential equations (PDEs) directly into machine learning deep networks.
-*   **Mathematical Foundation (PINN Loss Metric Optimization):**
-    $$\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{data}} + \mathcal{L}_{\text{physics}}$$
-    $$\mathcal{L}_{\text{physics}} = \frac{1}{N} \sum_{i=1}^N \left| \frac{\partial \hat{u}}{\partial t} + \mathcal{N}_x[\hat{u}] \right|^2$$
-*   **Core Literature Insights:** Standard data-driven AI models fail when telemetry logs are scarce or noisy. By embedding physical conservation matrices (like fluid momentum or mechanical stress limits) straight into the backpropagation loss calculation, the system is physically forced to maintain stability.
-*   **Active Lab Mapping:** Serves as the foundation for structural health degradation forecasting tracks within my `AeroDigitalTwin`.
+This provides a common conceptual framework for several projects:
 
-### 🛸 3. Cyber-Physical Runtime Verification Space
-*   **Target Publication Domain:** Formal methods, control safety boundaries, and trajectory validation under high-uncertainty dynamics.
-*   **Mathematical Foundation (State-Space Control Matrix):**
-    $$\dot{\mathbf{x}}(t) = \mathbf{A}\mathbf{x}(t) + \mathbf{B}\mathbf{u}(t) + \mathbf{D}\mathbf{w}(t)$$
-*   **Core Literature Insights:** Modeling structural error bounds where external environmental disturbance forces ($\mathbf{w}(t)$), such as heavy atmospheric crosswind shear vectors, interface with proportional feedback hardware loops ($\mathbf{u}(t)$). 
-*   **Active Lab Mapping:** Connects directly into my `AeroCPSSimulation` and `AutonomousPathPlanner` verification timelines.
+```text
+Physical / Simulated System
+            ↓
+       Observations
+            ↓
+      State Estimation
+            ↓
+    Predictive Model
+            ↓
+ Uncertainty Assessment
+            ↓
+ Optimization / Control
+            ↓
+       New System State
+            ↺
+```
 
----
-
-## 🗺️ Academic Course-to-Thesis Mapping Ledger
-This ledger functions as an active mapping log to guarantee every upcoming graduate assignment contributes structurally to a specific segment of my eventual doctoral dissertation framework:
-
-1.  **MSIM 602 (Simulation Fundamentals):** Applied to design high-performance queue management systems tracking sensory packet ingestion latency constraints.
-2.  **MSIM 541 (Computer Graphics & Visualization):** Applied to extend browser-native low-overhead interactive monitoring canvases.
-3.  **Advanced Machine Learning Graduate Seminars:** Applied to optimize stress tracking weight algorithms inside the structural digital twin engine.
-4.  **High-Performance Computing (HPC) Core:** Applied to translate local script configurations into scalable, distributed parallel arrays running on ODU clusters.
-
----
-
-## 📊 Comprehensive Computational Simulation Data Ledger
-
-This ledger acts as a permanent auditing framework tracking the discrete mathematical variations, operational environments, and resulting physical file logs compiled across my technical architecture.
-
-| 📂 Target Repository Slot | 🏷️ Research Scenario Profile | 🌍 Physical Parameters Tested | 📄 Log Asset Generated (Hard Drive / Cloud) |
-| :--- | :--- | :--- | :--- |
-| `AeroCPSSimulation` | Baseline Planetary Flight | Gravity: $-9.81 \text{ m/s}^2$ (Earth Core) | `test_logs/flight_telemetry_run_history.txt` |
-| `AeroCPSSimulation` | Deep Space Drone Auto-Pilot | Gravity: $-3.711 \text{ m/s}^2$ (Mars Grid) | `test_logs/flight_telemetry_run_history.txt` |
-| `AeroDigitalTwin` | Optimization Phase Baseline | Epochs: $50$ \| Learning Rate: $1\text{e-}4$ | `test_logs/learning_test_run_baseline.txt` |
-| `AeroDigitalTwin` | Deep Model Convergence Suite | Epochs: $500$ \| Learning Rate: $1\text{e-}3$| `test_logs/learning_test_run_converged.txt` |
-| `BiomedicalSystemsSolver` | Transient Carotid Hemodynamics| Track Scale: $10 \text{ cm}$ \| Nodes: $20$ | `output/hemodynamic_velocity_vector.txt` |
-| `BiomedicalSystemsSolver` | Neuro-Electrophysiology Cable | Track Scale: $1 \text{ cm}$ \| Nodes: $100$ | `output/transmembrane_potential_volt.txt` |
-
-### 🛠️ Execution Tracking Protocol
-* Local text logs generated in standard comma-separated text frameworks (`.txt` / `.csv`) are housed inside structured root-level `test_logs/` sub-directories.
-* Changes are automatically ingested and integrated during pushing routines to serve as immutable benchmark artifacts matching my doctoral thesis progress timeline tracking constraints.
+This feedback structure is central to my developing interest in adaptive digital twins and intelligent computational systems.
 
 ---
 
-## 🔬 Advanced Mathematical Derivations & Publication Deep-Dive
+# 2. Research Development: Adaptive Digital Twins
 
-This section documents the foundational calculus limits, partial differential equations, and state-space tracking mechanics guiding my doctoral research thesis compilation.
+The `Adaptive-Digital-Twin-Framework` repository is being developed as a theoretical and computational framework for studying systems that continuously reconcile mathematical models with incoming observations.
 
-### ⚡ 1. Multi-Scale Hodgkin-Huxley Cable Matrix Verification
-Electrical signal propagation velocity down unmyelinated neural pathways is evaluated by tracking parallel membrane capacitance and ion channel conductance parameters:
+Current foundations include:
 
-$$\frac{a}{2R_a}\frac{\partial^2 V}{\partial x^2} = C_m\frac{\partial V}{\partial t} + \bar{g}_{Na}m^3h(V - V_{Na}) + \bar{g}_K n^4(V - V_K) + g_L(V - V_L)$$
+1. dynamical systems,
+2. state-space representation,
+3. observation and state estimation,
+4. machine learning as adaptive dynamics,
+5. uncertainty quantification,
+6. optimization and intelligent control, and
+7. computational architecture.
 
-*   **Axoplasmic Diffusion Metric:** The second-order derivative ($\frac{\partial^2 V}{\partial x^2}$) governs passive longitudinal voltage decay down the fiber core axis based on axial core radius ($a$) constraints.
-*   **Voltage-Gated Gating Transitions:** Dynamic open/close probability matrices ($m, h, n$) simulate the precise sodium depolarization and potassium repolarization currents generating transient clinical potential voltage spike waveforms.
+A general adaptive model can be represented conceptually as:
 
-### 📐 2. Non-Linear Hemodynamic Convective Mass-Transport Fluid Core
-The fluid dynamics solver moves beyond basic linear boundary assumptions to enforce a 1D incompressible convective Navier-Stokes profile tracking velocity vectors through an elastic carotid tract segment:
+$$
+\hat{\mathbf{x}}_{t+1}
+=
+f_{\boldsymbol{\theta}_t}
+\left(
+\hat{\mathbf{x}}_t,
+\mathbf{u}_t
+\right)
+$$
 
-$$\frac{\partial v}{\partial t} + v \frac{\partial v}{\partial x} = -\frac{1}{\rho}\frac{\partial P}{\partial x} + \frac{\mu}{\rho}\left(\frac{\partial^2 v}{\partial x^2} + \frac{1}{R}\frac{\partial R}{\partial x}\frac{\partial v}{\partial x}\right)$$
+with parameter adaptation:
 
-*   **Convective Acceleration Mapping:** The spatial gradient ($v \frac{\partial v}{\partial x}$) resolves non-linear fluid momentum velocity alterations caused by geometric arterial lumen alterations.
-*   **Fluid-Structure Interaction Coupling:** The boundary tracking component ($\frac{1}{R}\frac{\partial R}{\partial x}$) models radial cross-sectional boundary expansion ($R$), capturing wall shear stress modifications during heart wall systolic ejections.
+$$
+\boldsymbol{\theta}_{t+1}
+=
+\boldsymbol{\theta}_t
+-
+\eta
+\nabla_{\boldsymbol{\theta}}
+\mathcal{L}
+\left(
+\mathbf{y}_t,
+\hat{\mathbf{y}}_t
+\right)
+$$
 
-### 🛸 3. Environmental Disturbance Control State-Space Array
-The validation of autonomous aerospace vehicle trajectory tracking loops operating under extreme atmospheric constraints uses a continuous safety-critical control framework:
+where $\eta$ is an adaptation or learning rate and $\mathcal{L}$ measures disagreement between observations and model predictions.
 
-$$\mathbf{\dot{x}}(t) = \mathbf{A}\mathbf{x}(t) + \mathbf{B}\mathbf{u}(t) + \mathbf{D}\mathbf{w}(t)$$
+This formulation motivates a central research question:
 
-*   **Systemic Tracking Integration:** Cross-maps independent feedback control laws ($\mathbf{u}(t)$) against external wind shear boundary disruptions ($\mathbf{w}(t)$) to model flight safety stability thresholds.
+> **How can a computational model update its internal state and parameters from observations while remaining physically meaningful, uncertainty-aware, and useful for prediction or control?**
 
----
-
-## ⛓️ Code-to-Equation Telemetry Mapping Index
-
-This index bridges the discrete structural string tracking metrics archived in local and cloud `test_logs/` sub-directories directly to the continuous differential parameters of the core mathematical frameworks.
-
-### 🛸 1. Aerospace CPS Tracking Integration Matrix
-*   **Target Log Location:** `AeroCPSSimulation/test_logs/flight_telemetry_run_history.txt`
-*   **Code Parameter Mapping Structure:**
-
-| 📄 Local Log String Value | 🧮 Continuous Calculus Term | 📐 Physical System Meaning |
-| :--- | :--- | :--- |
-| `Flight Step` | Independent Variable Step Delta ($t$) | Continuous iteration integration time steps ($\Delta t = 0.05\text{s}$) |
-| `Current Altitude` | State Trajectory Space Array element ($x(t)$) | The physical vertical tracking displacement component coordinate vector |
-| `Velocity` | First-Order Time Derivative Operator ($\dot{x}(t)$) | Kinematic velocity vector output generated by active total acceleration parameters |
-| `Atmospheric Wind Shear` | Disturbance Force Matrix component ($\mathbf{D}\mathbf{w}(t)$)| Crosswind vector disruptions acting dynamically on the quadcopter chassis bounds |
-
----
-
-### 🧠 2. Deep Learning Twin Optimization Matrix
-*   **Target Log Location:** `AeroDigitalTwin/test_logs/learning_test_run_*.txt`
-*   **Code Parameter Mapping Structure:**
-
-| 📄 Local Log String Value | 🧮 Continuous Calculus Term | 📐 Physical System Meaning |
-| :--- | :--- | :--- |
-| `Epochs` | Optimization Loop Index Boundary ($N$) | Total configuration tracking execution epochs run across the system loops |
-| `Learning Rate` | Gradient Descent Multiplier Step ($\alpha$) | System learning rate step size coefficient adjustments used to shift local model weights |
-| `Final Tracking Loss Index` | Aggregated Performance Metric Value ($\mathcal{L}_{\text{total}}$)| Mean Squared Error performance tracking indices validating optimization convergence |
+Repository:
+`Adaptive-Digital-Twin-Framework`
 
 ---
 
-### 🫀 3. Multi-Domain Biophysics Stream Mapping Core
-*   **Target UI Components:** `AeroCPSTelemetry/index.html` $\rightarrow$ Canvas Rendering Contexts
-*   **Code Parameter Mapping Structure:**
+# 3. Physics-Informed Machine Learning
 
-| 📄 Interface Variable String | 🧮 Continuous Calculus Term | 📐 Physical System Meaning |
-| :--- | :--- | :--- |
-| `cardioVelocity` | Transient Blood Mass-Transport Velocity ($v(x,t)$) | Scrolling 2D pixel coordinates plotting mid-artery Carotid pressure pump fluid waves |
-| `actionPotential` | Axon Transmembrane Potential ($V(x,t)$) | Scrolling red vector lines plotting voltage-gated synaptic depolarization spikes |
-| `systolicBP / diastolicBP`| Intravascular Blood Hydrostatic Pressure ($P$) | Automated text data canvas bindings calculating mean arterial blood pressure indices |
+## 3.1 Physics-Constrained Optimization
+
+A conventional supervised model may optimize a data-fitting objective:
+
+$$
+\mathcal{L}_{data}
+=
+\frac{1}{N}
+\sum_{i=1}^{N}
+\left|
+\hat{u}_i-u_i
+\right|^2
+$$
+
+For systems governed by known physical relationships, an additional residual term can penalize violations of the governing equations:
+
+$$
+\mathcal{L}_{total}
+=
+\mathcal{L}_{data}
++
+\lambda
+\mathcal{L}_{physics}
+$$
+
+where:
+
+$$
+\mathcal{L}_{physics}
+=
+\frac{1}{N_f}
+\sum_{i=1}^{N_f}
+\left|
+\frac{\partial \hat{u}}{\partial t}
++
+\mathcal{N}_x[\hat{u}]
+\right|^2
+$$
+
+and $\mathcal{N}_x$ represents the relevant spatial or physical differential operator.
+
+The physics term does **not** guarantee that a learned solution is correct or globally stable. Rather, it introduces an inductive constraint that penalizes disagreement with specified governing equations at evaluated points.
+
+This can be useful when observational data are sparse, noisy, or expensive to obtain.
+
+### Portfolio Mapping
+
+`AeroDigitalTwin`
+
+Current research themes:
+
+- physics-informed loss functions,
+- structural degradation,
+- predictive maintenance,
+- optimization behavior,
+- model convergence, and
+- physical consistency of learned predictions.
 
 ---
 
-## 📖 Deep-Dive Journal Analysis: Physics-Informed Fluid Architectures
+# 4. Fluid Dynamics and Physics-Informed Models
 
-This log encapsulates the mathematical derivations extracted from foundational PINN literature regarding continuous non-linear partial differential equation constraints embedded within neural network backpropagation loops.
+## 4.1 Incompressible Navier-Stokes Constraints
 
-### 🌊 1. Incompressible Navier-Stokes Conservation Constraints
-When modeling high-dimensional fluid velocity vectors or transient hemodynamic boundary layers, the predictive model is physically bound to satisfy classical momentum and mass conservation:
+For an incompressible velocity field $\mathbf{u}$:
 
-$$\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} = -\nabla p + \nu \nabla^2 \mathbf{u} \quad \text{and} \quad \nabla \cdot \mathbf{u} = 0$$
+$$
+\frac{\partial \mathbf{u}}{\partial t}
++
+(\mathbf{u}\cdot\nabla)\mathbf{u}
+=
+-\nabla p
++
+\nu\nabla^2\mathbf{u}
+$$
 
-### 🧠 2. Automatic Differentiation Optimization Residuals
-The deep network outputs approximation parameters for velocity ($\hat{\mathbf{u}}$) and hydrostatic pressure ($\hat{p}$). Applying automatic differentiation yields the custom physics penalty operator evaluated over $N_f$ distinct spatial collocation points:
+subject to the incompressibility constraint:
 
-$$\mathcal{L}_{\text{physics}} = \frac{1}{N_f} \sum_{i=1}^{N_f} \left| \frac{\partial \hat{\mathbf{u}}}{\partial t} + (\hat{\mathbf{u}} \cdot \nabla)\hat{\mathbf{u}} + \nabla \hat{p} - \nu \nabla^2 \hat{\mathbf{u}} \right|^2 + \frac{1}{N_f} \sum_{i=1}^{N_f} \left| \nabla \cdot \hat{\mathbf{u}} \right|^2$$
+$$
+\nabla\cdot\mathbf{u}=0
+$$
 
-This residual loss forces the gradient descent optimizer to reject physically impossible solutions, guaranteeing absolute model stability even in sparse telemetry tracking zones.
+where:
+
+- $\mathbf{u}$ is the fluid velocity field,
+- $p$ is pressure, and
+- $\nu$ is kinematic viscosity.
+
+A physics-informed model can construct residuals such as:
+
+$$
+\mathbf{r}_{momentum}
+=
+\frac{\partial \hat{\mathbf{u}}}{\partial t}
++
+(\hat{\mathbf{u}}\cdot\nabla)\hat{\mathbf{u}}
++
+\nabla\hat{p}
+-
+\nu\nabla^2\hat{\mathbf{u}}
+$$
+
+and:
+
+$$
+r_{continuity}
+=
+\nabla\cdot\hat{\mathbf{u}}
+$$
+
+with a physics loss:
+
+$$
+\mathcal{L}_{physics}
+=
+\frac{1}{N_f}
+\sum_{i=1}^{N_f}
+\left\|
+\mathbf{r}_{momentum}^{(i)}
+\right\|^2
++
+\frac{1}{N_f}
+\sum_{i=1}^{N_f}
+\left|
+r_{continuity}^{(i)}
+\right|^2
+$$
+
+Automatic differentiation can be used to evaluate the derivatives appearing in these residuals when the approximation is represented by a differentiable neural network.
+
+The residual encourages the learned approximation to satisfy the specified conservation equations at the selected collocation points. Its effectiveness depends on factors including optimization, model capacity, sampling, boundary conditions, and the suitability of the governing model.
 
 ---
 
-## 📖 Deep-Dive Journal Analysis: Non-Linear Membrane Gating Kinetics
+# 5. Computational Hemodynamics
 
-This log documents the mathematical frameworks governing voltage-gated ion transport mechanics across excitable cellular lipid bilayers, mapping micro-scale gate transitions to macro-scale electrical waveforms.
+The `BiomedicalSystemsSolver` explores simplified numerical representations of cardiovascular flow.
 
-### ⚡ 1. First-Order Hodgkin-Huxley State Variables
-The transient conductivity of Sodium ($Na^+$) and Potassium ($K^+$) channels is governed by three independent, voltage-dependent gating elements ($m, h, n$) tracking activation and inactivation limits:
+A developing one-dimensional velocity formulation is:
 
-$$\frac{dm}{dt} = \alpha_m(V)(1 - m) - \beta_m(V)m$$
-$$\frac{dh}{dt} = \alpha_h(V)(1 - h) - \beta_h(V)h$$
-$$\frac{dn}{dt} = \alpha_n(V)(1 - n) - \beta_n(V)n$$
+$$
+\frac{\partial v}{\partial t}
++
+v\frac{\partial v}{\partial x}
+=
+-\frac{1}{\rho}\frac{\partial P}{\partial x}
++
+\frac{\mu}{\rho}
+\left(
+\frac{\partial^2v}{\partial x^2}
++
+\frac{1}{R}
+\frac{\partial R}{\partial x}
+\frac{\partial v}{\partial x}
+\right)
+$$
 
-*   **Voltage-Dependent Rate Coefficients:** The forward ($\alpha$) and backward ($\beta$) transition rates are explicitly bound by exponential thermodynamic properties relative to the instantaneous transmembrane voltage ($V$):
-    $$\alpha_n(V) = \frac{0.01(V + 55)}{1 - \exp(-(V + 55)/10)} \quad \text{and} \quad \beta_n(V) = 0.125\exp\left(-\frac{V + 65}{80}\right)$$
+where:
 
-### 📊 2. Biophysics Telemetry System Mapping Core
-These discrete computational arrays drive the scrolling waveforms rendered natively within the low-latency interactive oscilloscope:
-*   `m_gate` $\rightarrow$ Controls the immediate inward $Na^+$ current density, generating the rapid $+40\text{ mV}$ peak depolarization spike.
-*   `h_gate` & `n_gate` $\rightarrow$ Simulates the delayed outward $K^+$ current activation and sodium channel closing, forcing the repolarization decay back to the steady $-70\text{ mV}$ baseline.
+- $v(x,t)$ represents axial velocity,
+- $P(x,t)$ represents pressure,
+- $\rho$ represents fluid density,
+- $\mu$ represents dynamic viscosity, and
+- $R(x,t)$ represents a spatially or temporally varying vessel radius.
 
-| 📂 Target Repository Slot | 🏷️ Research Scenario Profile | 🌍 Physical Parameters Tested | 📄 Log Asset Generated (Hard Drive / Cloud) |
-| :--- | :--- | :--- | :--- |
-| `BiomedicalSystemsSolver` | Axon Action Potential Sweep | Baseline Spike Bounds ($-70\text{ to } +40\text{ mV}$) | `test_logs/axon_membrane_voltage_potential.txt` |
+The convective term:
+
+$$
+v\frac{\partial v}{\partial x}
+$$
+
+captures nonlinear transport of momentum.
+
+The radius-dependent term provides a simplified mechanism for exploring how changes in vessel geometry may influence the modeled velocity field.
+
+This formulation should be understood as a computational approximation rather than a complete clinical model of cardiovascular fluid-structure interaction.
+
+### Computational Mapping
+
+| Simulation quantity | Mathematical quantity | Interpretation |
+|---|---|---|
+| Velocity | $v(x,t)$ | Axial fluid velocity |
+| Pressure | $P(x,t)$ | Modeled pressure field |
+| Vessel radius | $R(x,t)$ | Geometric boundary parameter |
+| Time step | $\Delta t$ | Numerical integration increment |
+| Spatial node | $x_i$ | Discretized vessel position |
+
+Repository:
+`BiomedicalSystemsSolver`
 
 ---
 
-## 📖 Deep-Dive Journal Analysis: Adversarial Resilience in Reinforcement Learning
+# 6. Electrophysiological Modeling
 
-This log structures the mathematical frameworks, Markov Decision Process variables, and policy perturbation gradients utilized to isolate adversarial state-observation poisoning vectors inside high-fidelity behavioral simulation systems.
+## 6.1 Spatial Cable Model
 
-### 🤖 1. Bounded Adversarial State Perturbations
-During an active telemetry data poisoning exploitation cycle, a malicious actor intercepts the high-fidelity environmental tracking state ($s_t$) and infuses a bounded perturbation vector ($\delta_t$), altering the neural network's input ingestion node:
+Electrical propagation through excitable tissue can be represented using a cable-type equation:
 
-$$\tilde{s}_t = s_t + \delta_t \quad \text{subject to} \quad \|\delta_t\|_p \leq \epsilon$$
+$$
+C_m
+\frac{\partial V}{\partial t}
+=
+\frac{a}{2R_a}
+\frac{\partial^2V}{\partial x^2}
+-
+\sum I_{ion}
+$$
 
-By constraining the perturbation envelope within strict bounds ($\epsilon$), the exploit remains hidden from simple statistical out-of-bounds safety filters while severely degrading closed-loop tracking metrics.
+where:
 
-### 📐 2. Exploited Policy Gradient Objective Divergence
-The Reinforcement Learning agent maps actions based on the compromised observation, forcing the cumulative expected return function ($J(\theta)$) to track a degraded policy trajectory ($\pi_\theta(a_t \mid \tilde{s}_t)$):
+- $V(x,t)$ is transmembrane potential,
+- $C_m$ is membrane capacitance,
+- $a$ is a geometric radius parameter,
+- $R_a$ is axial resistance, and
+- $I_{ion}$ represents ionic currents.
 
-$$\nabla_\theta J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta} \left[ \sum_{t=0}^{T} \nabla_\theta \log \pi_\theta(a_t \mid \tilde{s}_t) Q^{\pi_\theta}(s_t, a_t) \right]$$
+The spatial derivative:
 
-My master's thesis framework deploys parallel high-fidelity physics simulators to cross-examine actual vehicle trajectory deviations against expected optimal value baselines ($V^*(s_t)$), exposing subtle policy gradient abnormalities in real-time.
+$$
+\frac{\partial^2V}{\partial x^2}
+$$
+
+represents spatial variation in membrane voltage and contributes to the propagation of electrical activity along the modeled domain.
+
+---
+
+## 6.2 Hodgkin-Huxley-Type Ionic Dynamics
+
+A more detailed representation introduces voltage-dependent sodium, potassium, and leakage currents:
+
+$$
+\frac{a}{2R_a}
+\frac{\partial^2V}{\partial x^2}
+=
+C_m\frac{\partial V}{\partial t}
++
+\bar{g}_{Na}m^3h(V-V_{Na})
++
+\bar{g}_{K}n^4(V-V_K)
++
+g_L(V-V_L)
+$$
+
+The gating variables evolve according to first-order kinetic equations:
+
+$$
+\frac{dm}{dt}
+=
+\alpha_m(V)(1-m)
+-
+\beta_m(V)m
+$$
+
+$$
+\frac{dh}{dt}
+=
+\alpha_h(V)(1-h)
+-
+\beta_h(V)h
+$$
+
+$$
+\frac{dn}{dt}
+=
+\alpha_n(V)(1-n)
+-
+\beta_n(V)n
+$$
+
+An example voltage-dependent rate formulation is:
+
+$$
+\alpha_n(V)
+=
+\frac{0.01(V+55)}
+{1-\exp(-(V+55)/10)}
+$$
+
+and:
+
+$$
+\beta_n(V)
+=
+0.125
+\exp
+\left(
+-\frac{V+65}{80}
+\right)
+$$
+
+These variables represent idealized channel activation and inactivation dynamics and provide a computational mechanism for generating action-potential-like behavior.
+
+### Portfolio Mapping
+
+`BiomedicalSystemsSolver`
+
+```text
+Membrane Parameters
+        ↓
+Gating-State Evolution
+        ↓
+Ionic Current Calculation
+        ↓
+Transmembrane Voltage
+        ↓
+Numerical Integration
+        ↓
+Signal Visualization
+```
+
+The corresponding browser visualization work in `AeroCPSTelemetry` provides a separate interface layer for displaying electrophysiological signal behavior.
+
+---
+
+# 7. Cyber-Physical Systems and Control
+
+A linearized state-space representation provides a useful foundation for analyzing controlled systems under disturbance:
+
+$$
+\dot{\mathbf{x}}(t)
+=
+\mathbf{A}\mathbf{x}(t)
++
+\mathbf{B}\mathbf{u}(t)
++
+\mathbf{D}\mathbf{w}(t)
+$$
+
+where:
+
+- $\mathbf{x}(t)$ represents system state,
+- $\mathbf{u}(t)$ represents control input,
+- $\mathbf{w}(t)$ represents disturbance,
+- $\mathbf{A}$ describes nominal state evolution,
+- $\mathbf{B}$ maps control inputs into the state dynamics, and
+- $\mathbf{D}$ maps disturbances into the system.
+
+This representation is useful for reasoning about how environmental disturbances interact with control actions and system dynamics.
+
+### Portfolio Mapping
+
+`AeroCPSSimulation`
+
+| Logged quantity | Mathematical interpretation |
+|---|---|
+| Flight step | Numerical time increment $\Delta t$ |
+| Altitude | Component of system state $\mathbf{x}(t)$ |
+| Velocity | State derivative / kinematic quantity |
+| Control input | Component of $\mathbf{u}(t)$ |
+| Wind disturbance | Component of $\mathbf{w}(t)$ |
+
+This mapping provides a bridge between simulation telemetry and formal state-space reasoning.
+
+---
+
+# 8. Autonomous Planning
+
+`AutonomousPathPlanner` explores a different layer of intelligent cyber-physical behavior: translating environmental information into trajectory decisions.
+
+A simplified planning pipeline can be represented as:
+
+```text
+Environment
+     ↓
+Perception / Obstacle Representation
+     ↓
+Geometric Collision Evaluation
+     ↓
+Trajectory Feasibility
+     ↓
+Waypoint Adjustment
+     ↓
+Updated Planned Path
+```
+
+This project currently emphasizes deterministic geometric reasoning rather than learned planning.
+
+Future research could investigate how deterministic planning, probabilistic state estimation, reinforcement learning, and model-predictive control compare under uncertainty.
+
+---
+
+# 9. Reinforcement Learning Robustness and Adversarial Perturbation
+
+A developing research direction examines the behavior of reinforcement-learning systems when observations are corrupted or intentionally manipulated.
+
+## 9.1 Bounded Observation Perturbation
+
+Let the true state observation at time $t$ be $s_t$.
+
+A perturbed observation can be represented as:
+
+$$
+\tilde{s}_t
+=
+s_t
++
+\delta_t
+$$
+
+subject to:
+
+$$
+\|\delta_t\|_p
+\leq
+\epsilon
+$$
+
+where $\epsilon$ bounds the perturbation magnitude under a selected norm.
+
+A bounded perturbation does not necessarily evade detection or degrade a policy. Instead, it defines an experimentally controlled adversarial region within which robustness can be evaluated.
+
+---
+
+## 9.2 Policy Behavior Under Perturbed Observations
+
+For a policy:
+
+$$
+\pi_\theta(a_t\mid\tilde{s}_t)
+$$
+
+the policy-gradient objective can be studied under altered observations:
+
+$$
+\nabla_\theta J(\theta)
+=
+\mathbb{E}_{\tau\sim\pi_\theta}
+\left[
+\sum_{t=0}^{T}
+\nabla_\theta
+\log
+\pi_\theta
+(a_t\mid\tilde{s}_t)
+Q^{\pi_\theta}(s_t,a_t)
+\right]
+$$
+
+Potential experimental questions include:
+
+- How does perturbation magnitude affect trajectory performance?
+- Which state variables produce the greatest policy sensitivity?
+- Can behavioral deviations reveal attacks that remain difficult to detect from raw observations alone?
+- How should false-positive and false-negative detection rates be evaluated?
+- Can physics-based simulation provide useful reference behavior for anomaly detection?
+
+This direction connects AI engineering, simulation, autonomous systems, and cybersecurity without assuming that a particular detection strategy has already been validated.
+
+### Developing Research Topic
+
+**Detecting Adversarial Data Poisoning Attacks in Reinforcement Learning Models Using High-Fidelity Behavioral Simulation**
+
+Repository:
+`Adversarial-RL-Data-Poisoning-Thesis`
+
+---
+
+# 10. Telemetry and Computational Infrastructure
+
+Mathematical models require software infrastructure capable of transporting, validating, processing, storing, and retrieving observations.
+
+`TelemetryPipelineJava` provides a backend engineering layer for this problem.
+
+Current architecture:
+
+```text
+Telemetry Source
+       ↓
+Spring Boot REST API
+       ↓
+Validation
+       ↓
+Service Layer
+       ↓
+BlockingQueue<TelemetryPacket>
+       ↓
+Asynchronous Processing
+       ↓
+Spring Data JPA
+       ↓
+Relational Persistence
+```
+
+This project is not itself a mathematical simulation. Instead, it represents infrastructure that could support future computational experiments involving streamed observations or model updates.
+
+That distinction is important: **simulation software represents system behavior; telemetry infrastructure transports and manages information about that behavior.**
+
+Repository:
+`TelemetryPipelineJava`
+
+---
+
+# 11. Simulation and Experimental Data Ledger
+
+The following table records current computational scenarios represented across the portfolio.
+
+| Repository | Scenario | Example parameters | Output / log |
+|---|---|---|---|
+| `AeroCPSSimulation` | Earth flight baseline | $g=-9.81\text{ m/s}^2$ | `test_logs/flight_telemetry_run_history.txt` |
+| `AeroCPSSimulation` | Mars gravity experiment | $g=-3.711\text{ m/s}^2$ | `test_logs/flight_telemetry_run_history.txt` |
+| `AeroDigitalTwin` | Optimization baseline | Epochs $=50$, learning rate $=10^{-4}$ | `test_logs/learning_test_run_baseline.txt` |
+| `AeroDigitalTwin` | Extended convergence run | Epochs $=500$, learning rate $=10^{-3}$ | `test_logs/learning_test_run_converged.txt` |
+| `BiomedicalSystemsSolver` | Hemodynamic simulation | Length $=10\text{ cm}$, nodes $=20$ | `output/hemodynamic_velocity_vector.txt` |
+| `BiomedicalSystemsSolver` | Electrophysiology simulation | Length $=1\text{ cm}$, nodes $=100$ | `output/transmembrane_potential_volt.txt` |
+
+These logs should be treated as computational artifacts associated with specific model configurations, not as experimental validation by themselves.
+
+---
+
+# 12. Code-to-Model Traceability
+
+A recurring goal across these repositories is to make relationships between software variables and mathematical quantities explicit.
+
+Examples include:
+
+| Software / telemetry quantity | Mathematical quantity | Domain |
+|---|---|---|
+| `altitude` | state component $x_i(t)$ | Aerospace |
+| `velocity` | $\dot{x}(t)$ or $v(t)$ | Aerospace / fluid dynamics |
+| `windDisturbance` | $\mathbf{w}(t)$ | CPS control |
+| `learningRate` | $\eta$ or $\alpha$ | Optimization |
+| `loss` | $\mathcal{L}$ | Machine learning |
+| `actionPotential` | $V(x,t)$ | Electrophysiology |
+| `cardioVelocity` | $v(x,t)$ | Hemodynamics |
+
+Maintaining this traceability helps distinguish:
+
+- mathematical assumptions,
+- numerical approximations,
+- implementation variables,
+- telemetry outputs, and
+- experimental observations.
+
+This separation becomes increasingly important as model complexity increases.
+
+---
+
+# 13. Research Validation Principles
+
+As these projects develop, stronger research claims should be supported through explicit validation rather than inferred from successful execution alone.
+
+Important validation categories include:
+
+### Numerical Verification
+
+Does the implementation correctly solve the mathematical model being specified?
+
+Possible methods:
+
+- convergence studies,
+- time-step sensitivity,
+- spatial-grid sensitivity,
+- comparison with analytical solutions when available,
+- conservation checks, and
+- regression tests.
+
+### Model Validation
+
+Does the mathematical model adequately represent the phenomenon being studied for its intended purpose?
+
+Possible methods:
+
+- comparison with published reference data,
+- parameter sensitivity analysis,
+- comparison with established benchmark problems, and
+- uncertainty analysis.
+
+### Machine-Learning Evaluation
+
+Does the learned model generalize beyond its training conditions?
+
+Possible methods:
+
+- train/validation/test separation,
+- baseline comparisons,
+- ablation studies,
+- out-of-distribution evaluation,
+- uncertainty calibration, and
+- repeated experiments.
+
+### Cyber-Physical / Control Evaluation
+
+Does the system remain effective under disturbance, uncertainty, or altered operating conditions?
+
+Possible methods:
+
+- disturbance sweeps,
+- robustness testing,
+- trajectory error analysis,
+- control-effort measurement,
+- failure-envelope characterization, and
+- Monte Carlo simulation.
+
+---
+
+# 14. Literature Review Tracks
+
+Current literature-review areas include:
+
+### Physics-Informed Machine Learning
+
+Questions:
+
+- When do physics-informed constraints improve generalization?
+- How should competing data and physics losses be weighted?
+- What failure modes occur when the assumed governing equations are incomplete?
+- How should PINNs be compared with conventional numerical solvers?
+
+### Adaptive Digital Twins
+
+Questions:
+
+- What distinguishes a digital model from an adaptive digital twin?
+- How should model-state synchronization be quantified?
+- Which state-estimation methods are appropriate under partial observability?
+- How should uncertainty propagate through predictions and control decisions?
+
+### Cyber-Physical Systems
+
+Questions:
+
+- How should disturbances and uncertainty be represented?
+- Which safety properties can be tested computationally?
+- How can telemetry support runtime monitoring?
+- What is the relationship between simulation verification and physical-system validation?
+
+### Computational Biophysics
+
+Questions:
+
+- Which simplifications are appropriate for educational or exploratory models?
+- How sensitive are electrophysiological simulations to gating parameters?
+- How do discretization choices affect modeled wave propagation?
+- Which hemodynamic assumptions dominate predicted flow behavior?
+
+### Adversarial Reinforcement Learning
+
+Questions:
+
+- Which observation channels are most sensitive to bounded perturbations?
+- How should attack success be quantified?
+- Can simulated physical behavior provide an independent anomaly signal?
+- How robust are detection methods under environmental uncertainty?
+
+---
+
+# 15. Academic Development Mapping
+
+Future coursework can contribute to this research program without assuming in advance that every assignment will become part of a dissertation.
+
+Potential connections include:
+
+- **Simulation fundamentals:** experimental design, discrete-event simulation, verification, and validation.
+- **Computer graphics and visualization:** scientific visualization and interactive telemetry interfaces.
+- **Machine learning:** adaptive models, uncertainty, representation learning, and robustness.
+- **High-performance computing:** parallel simulation, parameter sweeps, ensemble methods, and scalable model execution.
+- **Algorithms:** autonomous planning, optimization, and computational complexity.
+- **Probability and statistics:** uncertainty quantification, estimation, inference, and experimental analysis.
+- **Software engineering:** maintainable research software, testing, architecture, and reproducibility.
+
+The objective is to allow coursework, independent projects, and later graduate research to reinforce one another where the connection is technically meaningful.
+
+---
+
+# 16. Long-Term Research Direction
+
+The broader research trajectory is moving toward computational systems that combine:
+
+$$
+\boxed{
+\text{Physical Models}
++
+\text{Observations}
++
+\text{Machine Learning}
++
+\text{Uncertainty}
++
+\text{Optimization}
++
+\text{Control}
+}
+$$
+
+A mature implementation of this idea could support a continuous loop:
+
+```text
+Observe
+   ↓
+Estimate
+   ↓
+Predict
+   ↓
+Quantify Uncertainty
+   ↓
+Adapt
+   ↓
+Optimize / Control
+   ↓
+Observe Again
+```
+
+This architecture motivates research across adaptive digital twins, autonomous systems, cyber-physical systems, computational science, and intelligent simulation.
+
+The long-term question guiding this work is:
+
+> **How can computational models remain useful as the systems they represent evolve, observations remain incomplete, and decisions must be made under uncertainty?**
+
+That question provides a research bridge between my current software-engineering projects and future graduate study in Modeling and Simulation Engineering.
