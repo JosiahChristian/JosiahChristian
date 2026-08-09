@@ -45,3 +45,5 @@ To pursue doctoral research in Computational Modeling and Simulation Engineering
 ## 🎓 MASTER'S THESIS PROFILE
 *   **Title:** *Detecting Adversarial Data Poisoning Attacks in Reinforcement Learning Models Using High-Fidelity Behavioral Simulation*
 *   **Core Methodologies:** Reinforcement Learning (RL) policy verification, adversarial machine learning mitigation, multi-variable statistical anomaly detection, high-fidelity physical systems modeling.
+*   
+https://github.com/christianjosiah2484-ai/Adversarial-RL-Data-Poisoning-Thesis/blob/main/paper
