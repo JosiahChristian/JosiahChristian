@@ -182,3 +182,23 @@ These discrete computational arrays drive the scrolling waveforms rendered nativ
 | 📂 Target Repository Slot | 🏷️ Research Scenario Profile | 🌍 Physical Parameters Tested | 📄 Log Asset Generated (Hard Drive / Cloud) |
 | :--- | :--- | :--- | :--- |
 | `BiomedicalSystemsSolver` | Axon Action Potential Sweep | Baseline Spike Bounds ($-70\text{ to } +40\text{ mV}$) | `test_logs/axon_membrane_voltage_potential.txt` |
+
+---
+
+## 📖 Deep-Dive Journal Analysis: Adversarial Resilience in Reinforcement Learning
+
+This log structures the mathematical frameworks, Markov Decision Process variables, and policy perturbation gradients utilized to isolate adversarial state-observation poisoning vectors inside high-fidelity behavioral simulation systems.
+
+### 🤖 1. Bounded Adversarial State Perturbations
+During an active telemetry data poisoning exploitation cycle, a malicious actor intercepts the high-fidelity environmental tracking state ($s_t$) and infuses a bounded perturbation vector ($\delta_t$), altering the neural network's input ingestion node:
+
+$$\tilde{s}_t = s_t + \delta_t \quad \text{subject to} \quad \|\delta_t\|_p \leq \epsilon$$
+
+By constraining the perturbation envelope within strict bounds ($\epsilon$), the exploit remains hidden from simple statistical out-of-bounds safety filters while severely degrading closed-loop tracking metrics.
+
+### 📐 2. Exploited Policy Gradient Objective Divergence
+The Reinforcement Learning agent maps actions based on the compromised observation, forcing the cumulative expected return function ($J(\theta)$) to track a degraded policy trajectory ($\pi_\theta(a_t \mid \tilde{s}_t)$):
+
+$$\nabla_\theta J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta} \left[ \sum_{t=0}^{T} \nabla_\theta \log \pi_\theta(a_t \mid \tilde{s}_t) Q^{\pi_\theta}(s_t, a_t) \right]$$
+
+My master's thesis framework deploys parallel high-fidelity physics simulators to cross-examine actual vehicle trajectory deviations against expected optimal value baselines ($V^*(s_t)$), exposing subtle policy gradient abnormalities in real-time.
