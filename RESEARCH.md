@@ -7,11 +7,11 @@
 My trajectory into a Ph.D. program builds directly upon the mathematical and empirical baselines established during my Master's research curriculum. Rather than treating graduate milestones as static milestones, my doctoral infrastructure actively ingests, optimizes, and scales my Master's thesis frameworks into high-performance, real-time cyber-physical systems.
 
 ### 🔬 Core Thesis Integration
-*   **Master's Research Domain Focus:** Cyber-Physical Security for Autonomous AI Systems.
-*   **Mathematical Integration Coordinate:** The continuous equations and parameters validated during my Master's studies serve as the exact physical constraints mapping the baseline state spaces of my active software ecosystem.
+*   **Master's Research Domain Focus:** Detecting Adversarial Data Poisoning Attacks in Reinforcement Learning Models Using High-Fidelity Behavioral Simulation.
+*   **Mathematical Integration Coordinate:** Evaluates the vulnerabilities of autonomous Reinforcement Learning (RL) policy functions ($\pi(a \mid s)$) under malicious state-observation perturbations.
 *   **Translational Pipeline Scaling:**
-    *   *Data Layer:* Raw numerical datasets compiled during my master's tracking modules are routed directly into `test_logs/` sub-directories to anchor machine learning training runs.
-    *   *Compute Layer:* Modular algorithm scripts developed during my graduate coursework have been cross-compiled and encapsulated into my production-grade C++ and Java engines.
+    *   *Data Layer:* Poisoned optimization trajectories generated during high-fidelity simulations are archived inside `AeroDigitalTwin/test_logs/` to establish detection baseline boundaries.
+    *   *Compute Layer:* Anomaly detection classification models written in Python are integrated directly adjacent to the C++ closed-loop autopilot controller structures to run real-time data filtering.
 
 This tracking database logs the historical data, mathematical equations, and active literature reviews matching my trajectory into a Ph.D. in Modeling and Simulation Engineering program.
 
