@@ -4,10 +4,10 @@
 
 ## 🎓 Master's Thesis Bridging Node (Computational Foundation)
 
-My trajectory into the ODU Ph.D. program builds directly upon the mathematical and empirical baselines established during my Master's research curriculum. Rather than treating graduate milestones as static milestones, my doctoral infrastructure actively ingests, optimizes, and scales my Master's thesis frameworks into high-performance, real-time cyber-physical systems.
+My trajectory into a Ph.D. program builds directly upon the mathematical and empirical baselines established during my Master's research curriculum. Rather than treating graduate milestones as static milestones, my doctoral infrastructure actively ingests, optimizes, and scales my Master's thesis frameworks into high-performance, real-time cyber-physical systems.
 
 ### 🔬 Core Thesis Integration
-*   **Master's Research Domain Focus:** [Insert your Master's Topic, e.g., Predictive Neural Network Regression / Finite-Difference Bio-Fluid Transport / Autonomous Kinematic Feedback Loops].
+*   **Master's Research Domain Focus:** Cyber-Physical Security for Autonomous AI Systems.
 *   **Mathematical Integration Coordinate:** The continuous equations and parameters validated during my Master's studies serve as the exact physical constraints mapping the baseline state spaces of my active software ecosystem.
 *   **Translational Pipeline Scaling:**
     *   *Data Layer:* Raw numerical datasets compiled during my master's tracking modules are routed directly into `test_logs/` sub-directories to anchor machine learning training runs.
