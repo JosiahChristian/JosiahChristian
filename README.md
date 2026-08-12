@@ -75,7 +75,7 @@ Engineering features include:
 - Automated Spring Boot, MockMvc, and repository tests
 - GitHub Actions CI using Java 21
 
-[Explore TelemetryPipelineJava](https://github.com/christianjosiah2484-ai/TelemetryPipelineJava)
+[Explore TelemetryPipelineJava](https://github.com/JosiahChristian/TelemetryPipelineJava)
 
 ---
 
@@ -96,7 +96,7 @@ Engineering features include:
 - CMake build management
 - GCC/Clang CI validation
 
-[Explore AeroCPSSimulation](https://github.com/christianjosiah2484-ai/AeroCPSSimulation)
+[Explore AeroCPSSimulation](https://github.com/JosiahChristian/AeroCPSSimulation)
 
 ---
 
@@ -116,9 +116,9 @@ Current visualization domains include:
 - Electrophysiological signal behavior
 - Browser-native telemetry rendering
 
-[Explore AeroCPSTelemetry](https://github.com/christianjosiah2484-ai/AeroCPSTelemetry)
+[Explore AeroCPSTelemetry](https://github.com/JosiahChristian/AeroCPSTelemetry)
 
-[Launch Live Telemetry Visualizer](https://christianjosiah2484-ai.github.io/AeroCPSTelemetry/)
+[Launch Live Telemetry Visualizer](https://josiahchristian.github.io/AeroCPSTelemetry/)
 
 ---
 
@@ -139,7 +139,7 @@ Research themes include:
 - Loss-function design
 - Model convergence analysis
 
-[Explore AeroDigitalTwin](https://github.com/christianjosiah2484-ai/AeroDigitalTwin)
+[Explore AeroDigitalTwin](https://github.com/JosiahChristian/AeroDigitalTwin)
 
 ---
 
@@ -160,7 +160,7 @@ Current modeling areas include:
 - Finite-difference computation
 - Scientific visualization
 
-[Explore BiomedicalSystemsSolver](https://github.com/christianjosiah2484-ai/BiomedicalSystemsSolver)
+[Explore BiomedicalSystemsSolver](https://github.com/JosiahChristian/BiomedicalSystemsSolver)
 
 ---
 
@@ -181,7 +181,7 @@ Engineering themes include:
 - Dynamic waypoint adjustment
 - Modular C++ development
 
-[Explore AutonomousPathPlanner](https://github.com/christianjosiah2484-ai/AutonomousPathPlanner)
+[Explore AutonomousPathPlanner](https://github.com/JosiahChristian/AutonomousPathPlanner)
 
 ---
 
@@ -213,7 +213,7 @@ Adaptive Digital Twin
 
 The long-term objective is to investigate computational systems that continuously reconcile models with observations, quantify uncertainty, adapt internal representations, and support prediction or control as the underlying system evolves.
 
-[Explore Adaptive-Digital-Twin-Framework](https://github.com/christianjosiah2484-ai/Adaptive-Digital-Twin-Framework)
+[Explore Adaptive-Digital-Twin-Framework](https://github.com/JosiahChristian/Adaptive-Digital-Twin-Framework)
 
 ---
 
