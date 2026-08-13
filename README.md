@@ -6,7 +6,7 @@ I build software for **intelligent, data-driven, and physically modeled systems*
 
 My work combines software engineering with mathematical and physical modeling: from Java backend infrastructure and interactive web telemetry to autonomous planning, aerospace simulation, biomedical computation, and adaptive digital-twin research.
 
-I am developing this portfolio alongside my Computer and Data Science education with a long-term research direction in **Modeling and Simulation Engineering**, particularly the prediction, adaptation, and control of complex evolving systems.
+I am developing this portfolio alongside my Computer and Data Science degree programs with a long-term research direction in **Modeling and Simulation Engineering**, particularly the prediction, adaptation, and control of complex evolving systems.
 
 ---
 
