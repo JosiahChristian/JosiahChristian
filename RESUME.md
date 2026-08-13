@@ -3,6 +3,7 @@
 **Software Engineering • AI/ML • Cyber-Physical Systems • Computational Modeling**
 
 Virginia, United States     
+
 LinkedIn: www.linkedin.com/in/josiah-christian-1a0302109     
 GitHub: https://github.com/JosiahChristian  
 Email: christianjosiah2484@gmail.com
