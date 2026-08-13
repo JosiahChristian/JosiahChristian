@@ -2,7 +2,7 @@
 
 **Software Engineering • AI/ML • Cyber-Physical Systems • Computational Modeling**
 
-Winchester, Virginia  
+Virginia, United States
 GitHub: https://github.com/JosiahChristian  
 Email: christianjosiah2484@gmail.com
 
