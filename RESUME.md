@@ -10,7 +10,7 @@ Email: christianjosiah2484@gmail.com
 
 ## PROFESSIONAL & RESEARCH OBJECTIVE
 
-Computer Science student developing software across backend engineering, artificial intelligence, scientific computing, cyber-physical systems, and computational modeling.
+Computer and Data Science student developing software across backend engineering, artificial intelligence, scientific computing, cyber-physical systems, and computational modeling.
 
 Interested in engineering software that connects **data, mathematical models, machine intelligence, and physical-system behavior**, with applications spanning autonomous systems, aerospace simulation, biomedical computation, telemetry infrastructure, and adaptive digital twins.
 
