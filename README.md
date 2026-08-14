@@ -104,21 +104,21 @@ Engineering features include:
 
 **JavaScript • HTML5 • CSS3 • Canvas • Web Visualization**
 
-A browser-based telemetry visualization environment for observing simulated cyber-physical and biomedical system behavior.
+A browser-based telemetry visualization environment for observing simulated aerospace cyber-physical system behavior.
 
-The interface demonstrates real-time visualization concepts through interactive browser rendering, including aerospace trajectory monitoring and computational biophysics signals.
+The interface demonstrates real-time flight-state visualization through browser-native rendering, including altitude tracking, feedback behavior, and environmental disturbances.
 
-Current visualization domains include:
+Current visualization areas include:
 
 - Aircraft altitude and trajectory behavior
-- Dynamic environmental disturbances
-- Cardiovascular flow profiles
-- Electrophysiological signal behavior
+- Target-altitude conformance
+- Dynamic atmospheric disturbances
+- Crosswind-induced displacement
 - Browser-native telemetry rendering
 
 [Explore AeroCPSTelemetry](https://github.com/JosiahChristian/AeroCPSTelemetry)
 
-[Launch Live Telemetry Visualizer](https://josiahchristian.github.io/AeroCPSTelemetry/)
+[Launch Live Aerospace Telemetry](https://josiahchristian.github.io/AeroCPSTelemetry/)
 
 ---
 
@@ -161,6 +161,27 @@ Current modeling areas include:
 - Scientific visualization
 
 [Explore BiomedicalSystemsSolver](https://github.com/JosiahChristian/BiomedicalSystemsSolver)
+
+### BiomedicalTelemetryVisualizer
+
+**JavaScript • HTML5 • CSS3 • Canvas • Scientific Visualization**
+
+A dedicated browser-based scientific telemetry environment for computational biophysics and biomedical system models.
+
+The visualizer provides an independent observation layer for physiological simulations, separating biomedical telemetry from the aerospace visualization stack.
+
+Current visualization areas include:
+
+- Cardiovascular flow dynamics
+- Vessel velocity telemetry
+- Systolic and diastolic pressure behavior
+- Neural action-potential propagation
+- Membrane-potential recovery
+- Real-time physiological signal rendering
+
+[Explore BiomedicalTelemetryVisualizer](https://github.com/JosiahChristian/BiomedicalTelemetryVisualizer)
+
+[Launch Live Biomedical Telemetry](https://josiahchristian.github.io/BiomedicalTelemetryVisualizer/)
 
 ---
 
