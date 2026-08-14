@@ -203,6 +203,7 @@ Engineering themes include:
 - Modular C++ development
 
 [Explore AutonomousPathPlanner](https://github.com/JosiahChristian/AutonomousPathPlanner)
+[Launch Live Autonomy Visualizer](https://josiahchristian.github.io/AutonomousPathPlanner/)
 
 ---
 
