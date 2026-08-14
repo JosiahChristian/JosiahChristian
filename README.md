@@ -162,7 +162,7 @@ Current modeling areas include:
 
 [Explore BiomedicalSystemsSolver](https://github.com/JosiahChristian/BiomedicalSystemsSolver)
 
-### BiomedicalTelemetryVisualizer
+## BiomedicalTelemetryVisualizer
 
 **JavaScript • HTML5 • CSS3 • Canvas • Scientific Visualization**
 
