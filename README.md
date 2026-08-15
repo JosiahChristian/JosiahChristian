@@ -10,6 +10,17 @@ I am developing this portfolio alongside my Computer and Data Science degree pro
 
 ---
 
+## Featured Projects
+
+- [Adaptive-Digital-Twin-Framework](https://github.com/JosiahChristian/Adaptive-Digital-Twin-Framework) — adaptive digital twin research, state estimation, uncertainty, optimization, and intelligent control
+- [AeroCPSSimulation](https://github.com/JosiahChristian/AeroCPSSimulation) — C++ cyber-physical flight simulation and feedback control
+- [TelemetryPipelineJava](https://github.com/JosiahChristian/TelemetryPipelineJava) — Java 21 / Spring Boot telemetry backend and concurrent processing pipeline
+- [AeroCPSTelemetry](https://josiahchristian.github.io/AeroCPSTelemetry/) — live aerospace telemetry visualizer
+- [BiomedicalTelemetryVisualizer](https://josiahchristian.github.io/BiomedicalTelemetryVisualizer/) — live biomedical scientific telemetry visualizer
+- [AutonomousPathPlanner](https://josiahchristian.github.io/AutonomousPathPlanner/) — autonomous navigation and obstacle-avoidance visualizer
+
+---
+
 ## Engineering & Research Focus
 
 My portfolio is organized around three connected areas:
@@ -203,6 +214,7 @@ Engineering themes include:
 - Modular C++ development
 
 [Explore AutonomousPathPlanner](https://github.com/JosiahChristian/AutonomousPathPlanner)
+
 [Launch Live Autonomy Visualizer](https://josiahchristian.github.io/AutonomousPathPlanner/)
 
 ---
@@ -236,6 +248,22 @@ Adaptive Digital Twin
 The long-term objective is to investigate computational systems that continuously reconcile models with observations, quantify uncertainty, adapt internal representations, and support prediction or control as the underlying system evolves.
 
 [Explore Adaptive-Digital-Twin-Framework](https://github.com/JosiahChristian/Adaptive-Digital-Twin-Framework)
+
+## Adversarial RL Data Poisoning Thesis
+
+An active research and thesis-development repository investigating adversarial data poisoning, reinforcement-learning policy integrity, anomaly detection, and safety-critical autonomous-system behavior.
+
+Current research themes include:
+
+- adversarial machine learning
+- reinforcement-learning robustness
+- poisoned training data
+- anomaly detection
+- safety-critical autonomy
+- simulation-based experimentation
+- reproducible research workflows
+
+[Explore Adversarial-RL-Data-Poisoning-Thesis](https://github.com/JosiahChristian/Adversarial-RL-Data-Poisoning-Thesis)
 
 ---
 
