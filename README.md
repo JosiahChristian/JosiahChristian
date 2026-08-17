@@ -25,7 +25,7 @@ A layered telemetry backend for validated ingestion, asynchronous processing, pe
 ### AeroCPSSimulation
 **C++ | CMake | Numerical Simulation | Control Systems**
 
-A modular C++ flight-dynamics and control simulation with reproducible builds, automated verification, and explicitly documented modeling boundaries.
+A modular C++ flight-dynamics and control simulation with reproducible builds, automated verification, versioned telemetry output, and explicitly documented modeling boundaries.
 
 [Explore AeroCPSSimulation](https://github.com/JosiahChristian/AeroCPSSimulation)
 
@@ -50,7 +50,7 @@ Browser-based visualization of schema-versioned cardiovascular and neural teleme
 ### AeroCPSTelemetry
 **JavaScript | HTML5 | CSS3 | Canvas**
 
-Browser-based aerospace telemetry and flight-state visualization for simulated behavior. Its current browser model is separate from AeroCPSSimulation; direct ingestion of the C++ simulator's output remains a planned integration rather than a claimed capability.
+Browser-based aerospace telemetry visualization that directly imports and validates the `aerocps.telemetry.v1` CSV emitted by AeroCPSSimulation. A separate reduced browser model remains available as a clearly labeled demonstration mode.
 
 [Explore Repository](https://github.com/JosiahChristian/AeroCPSTelemetry) | [Launch Visualization](https://josiahchristian.github.io/AeroCPSTelemetry/)
 
@@ -77,12 +77,12 @@ NumPy | SciPy | Numerical Simulation | Optimization | Statistical & Predictive M
 My research repositories are active development environments. Claims are intended to track the evidence produced by experiments rather than imply completed or institutionally approved research before that evidence exists.
 
 ### Adaptive-Digital-Twin-Framework
-Adaptive-system research involving state estimation, model adaptation, persistence, prediction, uncertainty, and falsification-oriented evaluation. The repository now surfaces concrete tracked experimental results alongside its methodology.
+Adaptive-system research involving state estimation, model adaptation, persistence, prediction, uncertainty, and falsification-oriented evaluation. The repository surfaces concrete tracked experimental results alongside its methodology.
 
 [Explore Adaptive-Digital-Twin-Framework](https://github.com/JosiahChristian/Adaptive-Digital-Twin-Framework)
 
 ### Adversarial-RL-Data-Poisoning-Thesis
-Developing research program on adversarial data poisoning, reinforcement-learning robustness, anomaly detection, and safety-critical autonomous-system behavior. The repository currently represents active experimental development; conclusions will follow executed and validated experiments.
+Developing research on adversarial data poisoning, reinforcement-learning robustness, anomaly detection, and safety-critical autonomous-system behavior. The repository now contains an executed Q-learning reward-poisoning baseline with held-out evaluation and reproducibility checks; broader claims remain intentionally unmade.
 
 [Explore Adversarial-RL-Data-Poisoning-Thesis](https://github.com/JosiahChristian/Adversarial-RL-Data-Poisoning-Thesis)
 
