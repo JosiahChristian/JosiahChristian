@@ -1,8 +1,8 @@
 # Josiah Christian
 
-### Software Engineering | AI/ML | Computational & Cyber-Physical Systems
+### Software Engineering | Computational Modeling | Adaptive & Cyber-Physical Systems
 
-I build software for data-intensive, autonomous, security, and computational systems. My work spans backend engineering, cybersecurity software, C++ simulation and autonomy, technical web applications, AI/ML, and scientific computing.
+I build software and computational systems for data-intensive, autonomous, security, simulation, and scientific-computing problems. My work spans backend engineering, cybersecurity software, C++ simulation and autonomy, telemetry, numerical modeling, and developing research in adaptive and machine-learning systems.
 
 ---
 
@@ -18,14 +18,14 @@ Scope-controlled cybersecurity software for orchestrating authorized security as
 ### TelemetryPipelineJava
 **Java 21 | Spring Boot | REST | Spring Data JPA | Maven**
 
-A layered telemetry backend for validated ingestion, asynchronous processing, persistence, and retrieval of telemetry data.
+A layered telemetry backend for validated ingestion, asynchronous processing, persistence, retrieval, observability, and PostgreSQL-backed deployment.
 
 [Explore TelemetryPipelineJava](https://github.com/JosiahChristian/TelemetryPipelineJava)
 
 ### AeroCPSSimulation
 **C++ | CMake | Numerical Simulation | Control Systems**
 
-A modular C++ flight-dynamics and feedback-control simulation with reproducible builds and automated validation.
+A modular C++ flight-dynamics and control simulation with reproducible builds, automated verification, and explicitly documented modeling boundaries.
 
 [Explore AeroCPSSimulation](https://github.com/JosiahChristian/AeroCPSSimulation)
 
@@ -38,21 +38,21 @@ Autonomous navigation software implementing geometric collision evaluation, obst
 
 ---
 
-## Live Technical Applications
-
-### AeroCPSTelemetry
-**JavaScript | HTML5 | CSS3 | Canvas**
-
-Browser-based aerospace telemetry and flight-state visualization for simulated cyber-physical system behavior.
-
-[Explore Repository](https://github.com/JosiahChristian/AeroCPSTelemetry) | [Launch Live Application](https://josiahchristian.github.io/AeroCPSTelemetry/)
+## Browser-Based Technical Visualization
 
 ### BiomedicalTelemetryVisualizer
 **JavaScript | HTML5 | CSS3 | Canvas | Scientific Visualization**
 
-Browser-based physiological telemetry and scientific visualization for cardiovascular and neural system models.
+Browser-based visualization of schema-versioned cardiovascular and neural telemetry exported by BiomedicalSystemsSolver. This is a real cross-repository data path; it is not presented as a medical device or clinical model.
 
-[Explore Repository](https://github.com/JosiahChristian/BiomedicalTelemetryVisualizer) | [Launch Live Application](https://josiahchristian.github.io/BiomedicalTelemetryVisualizer/)
+[Explore Repository](https://github.com/JosiahChristian/BiomedicalTelemetryVisualizer) | [Launch Visualization](https://josiahchristian.github.io/BiomedicalTelemetryVisualizer/)
+
+### AeroCPSTelemetry
+**JavaScript | HTML5 | CSS3 | Canvas**
+
+Browser-based aerospace telemetry and flight-state visualization for simulated behavior. Its current browser model is separate from AeroCPSSimulation; direct ingestion of the C++ simulator's output remains a planned integration rather than a claimed capability.
+
+[Explore Repository](https://github.com/JosiahChristian/AeroCPSTelemetry) | [Launch Visualization](https://josiahchristian.github.io/AeroCPSTelemetry/)
 
 ---
 
@@ -62,32 +62,31 @@ Browser-based physiological telemetry and scientific visualization for cardiovas
 Python | Java | C++ | JavaScript | SQL
 
 **Backend & Data**  
-FastAPI | Spring Boot | REST APIs | Spring Data JPA | SQLite
+FastAPI | Spring Boot | REST APIs | Spring Data JPA | SQLite | PostgreSQL
 
 **Engineering**  
-Git | GitHub Actions | CMake | Maven | Automated Testing
+Git | GitHub Actions | Docker | CMake | Maven | Automated Testing
 
-**Computational & AI**  
-NumPy | SciPy | Machine Learning | Numerical Simulation | Optimization
+**Computational**  
+NumPy | SciPy | Numerical Simulation | Optimization | Statistical & Predictive Modeling
 
 ---
 
 ## Computational Modeling & Research
 
-Alongside software engineering, I develop computational research involving adaptive systems, machine learning, numerical modeling, and complex dynamical systems.
+My research repositories are active development environments. Claims are intended to track the evidence produced by experiments rather than imply completed or institutionally approved research before that evidence exists.
 
 ### Adaptive-Digital-Twin-Framework
-Adaptive digital twins, state estimation, uncertainty quantification, model adaptation, prediction, and intelligent control.
+Adaptive-system research involving state estimation, model adaptation, persistence, prediction, uncertainty, and falsification-oriented evaluation. The repository now surfaces concrete tracked experimental results alongside its methodology.
 
 [Explore Adaptive-Digital-Twin-Framework](https://github.com/JosiahChristian/Adaptive-Digital-Twin-Framework)
 
 ### Adversarial-RL-Data-Poisoning-Thesis
-Adversarial machine learning, reinforcement-learning robustness, anomaly detection, and safety-critical autonomous-system behavior.
+Developing research program on adversarial data poisoning, reinforcement-learning robustness, anomaly detection, and safety-critical autonomous-system behavior. The repository currently represents active experimental development; conclusions will follow executed and validated experiments.
 
 [Explore Adversarial-RL-Data-Poisoning-Thesis](https://github.com/JosiahChristian/Adversarial-RL-Data-Poisoning-Thesis)
 
 ### BiomedicalSystemsSolver
-Numerical modeling and validation of cardiovascular and neural systems.
+Numerical modeling and validation of cardiovascular and neural systems, including documented limitations and unresolved validation discrepancies.
 
 [Explore BiomedicalSystemsSolver](https://github.com/JosiahChristian/BiomedicalSystemsSolver)
-
