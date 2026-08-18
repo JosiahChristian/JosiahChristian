@@ -76,6 +76,11 @@ NumPy | SciPy | Numerical Simulation | Optimization | Statistical & Predictive M
 
 The research repositories below are maintained as **evidence bases rather than completed papers**. They expose experiment implementations, preregistrations or frozen analysis rules where applicable, generated results, negative findings, falsification tests, inferential boundaries, provenance, and reproducibility material. Interpretive manuscripts are not represented as complete on the repositories' main branches.
 
+### Adaptive-Model-Gating
+Controlled adaptation-decision research on when a model should update under transient versus persistent change. The first frozen experiment shows a measurable tradeoff: persistence confirmation reduces unnecessary adaptation during temporary matched-onset changes relative to a simple threshold gate, but responds more slowly and incurs higher loss after persistent drift. Follow-on work is prospectively mapping how that tradeoff changes with event magnitude and duration.
+
+[Explore Adaptive-Model-Gating](https://github.com/JosiahChristian/Adaptive-Model-Gating)
+
 ### Adaptive-Digital-Twin-Framework
 Evidence-driven adaptive-system research spanning state estimation, model adaptation, decision-time validity, ranking/intervention behavior, uncertainty, and falsification-oriented evaluation. The current record includes a robust near-cutoff localization result in a tested fixed-budget ranking pipeline, later structural challenges to the original mechanism interpretation, a prospectively frozen magnitude-matched non-poison control for which poisoning specificity remained unresolved, and a timing audit showing that the strongest harmful-expansion classifier is retrospective rather than a valid pre-decision predictor.
 
