@@ -74,15 +74,15 @@ NumPy | SciPy | Numerical Simulation | Optimization | Statistical & Predictive M
 
 ## Computational Modeling & Research
 
-My research repositories are active development environments. Claims are intended to track the evidence produced by experiments rather than imply completed or institutionally approved research before that evidence exists.
+The research repositories below are maintained as **evidence bases rather than completed papers**. They expose experiment implementations, preregistrations or frozen analysis rules where applicable, generated results, negative findings, falsification tests, inferential boundaries, provenance, and reproducibility material. Interpretive manuscripts are not represented as complete on the repositories' main branches.
 
 ### Adaptive-Digital-Twin-Framework
-Adaptive-system research involving state estimation, model adaptation, persistence, prediction, uncertainty, and falsification-oriented evaluation. The repository surfaces concrete tracked experimental results alongside its methodology.
+Evidence-driven adaptive-system research spanning state estimation, model adaptation, decision-time validity, ranking/intervention behavior, uncertainty, and falsification-oriented evaluation. The current record includes a robust near-cutoff localization result in a tested fixed-budget ranking pipeline, later structural challenges to the original mechanism interpretation, a prospectively frozen magnitude-matched non-poison control for which poisoning specificity remained unresolved, and a timing audit showing that the strongest harmful-expansion classifier is retrospective rather than a valid pre-decision predictor.
 
 [Explore Adaptive-Digital-Twin-Framework](https://github.com/JosiahChristian/Adaptive-Digital-Twin-Framework)
 
 ### Adversarial-RL-Data-Poisoning-Thesis
-Developing research on adversarial data poisoning, reinforcement-learning robustness, anomaly detection, and safety-critical autonomous-system behavior. The repository now contains an executed Q-learning reward-poisoning baseline with held-out evaluation and reproducibility checks; broader claims remain intentionally unmade.
+Controlled reinforcement-learning reward-poisoning research using an 11-state tabular-Q-learning guidance environment. The repository preserves a frozen-threshold strength sweep, seed-level/inferential-unit documentation, aggregate results, and reproducibility controls. Current evidence shows weak descriptive discrimination by the tested trigger-state Q-margin detector at poisoning strengths 0.025–0.100 while deterministic task completion remains near the clean condition; it does not claim general impossibility of subtle-poisoning detection.
 
 [Explore Adversarial-RL-Data-Poisoning-Thesis](https://github.com/JosiahChristian/Adversarial-RL-Data-Poisoning-Thesis)
 
