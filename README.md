@@ -81,10 +81,10 @@ Evidence-driven adaptive-system research spanning state estimation, model adapta
 
 [Explore Adaptive-Digital-Twin-Framework](https://github.com/JosiahChristian/Adaptive-Digital-Twin-Framework)
 
-### Adversarial-RL-Data-Poisoning-Thesis
+### Adversarial-RL-Data-Poisoning
 Controlled reinforcement-learning reward-poisoning research using an 11-state tabular-Q-learning guidance environment. The repository preserves a frozen-threshold strength sweep, seed-level/inferential-unit documentation, aggregate results, and reproducibility controls. Current evidence shows weak descriptive discrimination by the tested trigger-state Q-margin detector at poisoning strengths 0.025–0.100 while deterministic task completion remains near the clean condition; it does not claim general impossibility of subtle-poisoning detection.
 
-[Explore Adversarial-RL-Data-Poisoning-Thesis](https://github.com/JosiahChristian/Adversarial-RL-Data-Poisoning-Thesis)
+[Explore Adversarial-RL-Data-Poisoning](https://github.com/JosiahChristian/Adversarial-RL-Data-Poisoning)
 
 ### BiomedicalSystemsSolver
 Numerical modeling and validation of cardiovascular and neural systems, including documented limitations and unresolved validation discrepancies.
